@@ -1,20 +1,19 @@
+
 import { useState } from 'react';
 import { X, ZoomIn } from 'lucide-react';
 import SectionWrapper from '@/components/SectionWrapper';
 import { recognitionData } from '@/data/content';
 
-// Upload both photos to:
-// public/images/supervisor-recognition-1.jpg
-// public/images/supervisor-recognition-2.jpg
-// They will be available in the app at the matching /images/... URLs.
+const base = import.meta.env.BASE_URL;
+
 const recognitionImages = [
   {
-    src: '/images/supervisor-recognition-1.jpg',
+    src: `${base}images/supervisor-recognition-1.jpg`,
     alt: 'Supervisor recognition photo 1',
     title: 'Supervisor Recognition 1',
   },
   {
-    src: '/images/supervisor-recognition-2.jpg',
+    src: `${base}images/supervisor-recognition-2.jpg`,
     alt: 'Supervisor recognition photo 2',
     title: 'Supervisor Recognition 2',
   },

@@ -1,33 +1,36 @@
 
+
 import { useState } from 'react';
 import { Camera, Image as ImageIcon, X } from 'lucide-react';
 import SectionWrapper from '@/components/SectionWrapper';
+
+const base = import.meta.env.BASE_URL;
 
 const weeks = [
   {
     title: 'Week 1',
     description: 'Internship activities and classroom observations.',
-    photos: ['/images/week1/classroom1.jpeg'],
+    photos: [`${base}images/week1/classroom1.jpeg`],
   },
   {
     title: 'Week 2',
     description: 'Teaching practice and learning activities.',
     photos: [
-      '/images/week2/classroom1.jpeg',
-      '/images/week2/classroom2.jpeg',
+      `${base}images/week2/classroom1.jpeg`,
+      `${base}images/week2/classroom2.jpeg`,
     ],
   },
   {
     title: 'Week 3',
     description: 'Classroom engagement and practical experience.',
-    photos: ['/images/week3/activity.jpeg'],
+    photos: [`${base}images/week3/activity.jpeg`],
   },
   {
     title: 'Week 4',
     description: 'Internship progress and teaching experience.',
     photos: [
-      '/images/week4/teaching.jpeg',
-      '/images/week4/activity.jpeg',
+      `${base}images/week4/teaching.jpeg`,
+      `${base}images/week4/activity.jpeg`,
     ],
   },
 ];
