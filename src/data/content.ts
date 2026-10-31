@@ -11,7 +11,7 @@ export const studentInfo = {
   email: 'shakeelakhtiar@gmail.com',
   whatsapp: '+92 341 8636340',
   whatsappLink: 'https://wa.me/923418636340',
-  photoPath: '/images/student-photo.jpg',
+  photoPath: `${import.meta.env.BASE_URL}images/student-photo.jpg`,
 };
 
 export const progressData = {
