@@ -152,13 +152,13 @@ export const documents = [
     title: 'Daily Internship Logbook',
     description: "Download the student's original daily internship log.",
     buttonLabel: 'Download Daily Log (PDF)',
-    filePath: '/documents/daily-log.pdf',
+    filePath: `${import.meta.env.BASE_URL}documents/daily-log.pdf`,
   },
   {
     title: 'Weekly Reflective Log',
     description: "Download the student's original weekly reflection document.",
     buttonLabel: 'Download Weekly Log (PDF)',
-    filePath: '/documents/weekly-log.pdf',
+    filePath: `${import.meta.env.BASE_URL}documents/weekly-log.pdf`,
   },
 ];
 
